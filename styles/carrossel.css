@@ -25,6 +25,9 @@
     margin: 1rem;
     padding: 1rem;
 }
+.descricao {
+    margin-right: 1rem;
+}
 .card__descricao {
     display: flex;
     justify-content: space-between;
@@ -81,5 +84,30 @@
     .card {
         width: 50%;
         margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 1rem 15vw 6rem 15vw;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+    .carrossel__titulo {
+        font-size: 2rem;
+    }
+    .card {
+        width: 60%;
+        margin: 0;
+    }
+    .descricao__titulo {
+        font-size: 2rem;
+    }
+    .descricao__texto {
+        font-size: 1rem;
+    }
+    .descricao {
+        margin-right: 2rem;
     }
 }

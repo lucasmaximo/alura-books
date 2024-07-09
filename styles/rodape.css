@@ -29,6 +29,7 @@ hr {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        font-size: 0.875rem;
     }
     .rodape__lista-link {
         display: flex;
@@ -38,5 +39,12 @@ hr {
     .rodape__link {
         color: var(--cinza-escuro);
         text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape__lista {
+        border-left: 0.0625rem solid var(--cinza-claro);
+        padding-left: 1rem;
     }
 }
