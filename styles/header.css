@@ -12,8 +12,12 @@
 .container__botao {
     display: none;
 }
-.container__botao:checked~.lista-menu {
+.container__botao:checked ~ .lista-menu {
     display: block;
+}
+.container__botao:checked ~ label .cabecalho__menu-hamburguer {
+    background-color: var(--azul); /* Altera o fundo para azul ao clicar */
+    background-image: url("../img/MenuAberto.svg"); /* Muda a imagem de fundo para Menu aberto */
 }
 .cabecalho__menu-hamburguer {
     display: inline-block;
@@ -26,13 +30,18 @@
 .container__imagem {
     padding: 1rem;
 }
+.container__titulo {
+    display: none;
+}
+.opcoes {
+    display: none;
+}
 .lista-menu {
     display: none;
     position: absolute;
     top: 100%;
     width: 70vw;
 }
-
 .lista-menu__titulo, 
 .lista-menu__item {
     padding: 1rem;
@@ -43,9 +52,57 @@
     font-weight: 700;
 }
 .lista-menu__link {
-    background: var(--azul-degrade);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--azul);
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Media queries */
+@media screen and (min-width: 1024px) {
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+    .container__titulo,
+    .container__titulo--negrito {
+        font-size: 1.875rem;
+    }
+    .container__titulo {
+        display: block;
+        font-weight: 400;    
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+    .opcoes {
+        display: flex;
+        position: relative;
+    }
+    .opcoes__botao {
+        display: none;
+    }
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+    .opcoes__botao:checked ~ label .opcoes__item {
+        color: var(--branco);
+        background-color: var(--azul);
+    }
+    .lista-menu__item:active {
+        background-color: var(--azul);
+    }
+    .lista-menu__link:active {
+        color: var(--branco);
+    }
+    .opcoes__item {
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container__imagem-transparente {
+        display: none;
+    }
 }

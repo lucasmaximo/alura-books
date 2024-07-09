@@ -60,3 +60,26 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+/* Media queries */
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        padding: 2.5rem 0 0.5rem 0;
+        font-size: 1.625rem;
+    }
+    .swiper {
+        width: 60%;
+    }
+    .swiper-pagination {
+        margin: 1.5rem 0 3rem 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+    .card {
+        width: 50%;
+        margin: 2rem auto;
+    }
+}
