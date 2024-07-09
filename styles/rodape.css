@@ -19,7 +19,7 @@ hr {
     .rodape__titulo {
         font-size: 1.5rem;
     }
-    .rodape__titulo-lista{
+    .rodape__titulo-lista {
         display: block;
         font-size: 0.875rem;
         color: var(--cinza-claro);
@@ -39,6 +39,9 @@ hr {
     .rodape__link {
         color: var(--cinza-escuro);
         text-decoration: none;
+    }
+    .rodape__link:hover {
+        color: var(--laranja);
     }
 }
 

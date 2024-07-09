@@ -56,12 +56,15 @@
 .botoes__item {
     margin: 0 0.75rem;
 }
-.botoes_ancora {
+.botoes__ancora {
     background-color: var(--laranja);
     padding: 1rem 2.25rem;
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+}
+.botoes__ancora:active {
+    background-color: var(--azul);
 }
 
 /* Media queries */
